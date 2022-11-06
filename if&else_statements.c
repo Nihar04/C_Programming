@@ -204,3 +204,84 @@ int main()
     return 0;
 }
 
+/*C PROGRAM TO CHECK WHETHER CHARACTER IS AN ALPHABET OR NOT*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() 
+{
+    char c;
+    printf("Enter an alphabet: ");
+    scanf("%c", &c);
+
+    if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+        printf("%c is an alphabet.", c);
+    else
+        printf("%c is not an alphabet.", c);
+
+    return 0;
+}
+/*C PROGRAM TO CHECK WHETHER AN ALPHABET IS A VOWEL OR A CONSONANT*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    char c;
+    int lowercase_Vowel, uppercase_Vowel;
+    printf("Enter an alphabet : ");
+    scanf("%c", &c);
+    lowercase_Vowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    uppercase_Vowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    if(lowercase_Vowel || uppercase_Vowel){
+        printf("The alphabet is a vowel.");
+    }
+    else{
+        printf("The alphabet is a constant.");
+    }
+
+    return 0;
+}
+/*C PROGRAM TO INPUT ANY CHARACTER AND CHECK WHETHER IT IS ALPHABET, DIGIT, OR SPECIAL CHARACTER*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    char c;
+    printf("Enter any character : ");
+    scanf("%c", &c);
+    if((c>='a' && c<='z') || (c>='A' && c<='Z')){
+        printf("It is an alphabet.");
+    }
+    else if(c>='0' && c<= '9' ){
+        printf("It is a digit.");
+    }
+    else{
+        printf("It is a special character");
+    }
+
+    return 0;
+}
+/*C PROGRAM TO CHECK WHETHER A CHARACTER IS AN UPPERCASE OR LOWERCASE ALPHABET*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+    char c;
+    printf("Enter any character : ");
+    scanf("%c", &c);
+    if(c>='a' && c<='z'){
+        printf("The alphabet is in lowercase.");
+    }
+    else{
+        printf("The alphabet is in uppercase.");
+    }
+
+    return 0;
+}
+
