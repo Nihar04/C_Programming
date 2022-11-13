@@ -281,3 +281,18 @@ int main()
 
     return 0;
 }
+
+/*If number of years w0rked in org is more than 3 else what if not more than 3*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main(){
+    int c_year, j_year;
+    printf("Enter the current year: ");
+    scanf("%d", &c_year);
+    printf("Enter the year of enrollment in the organization: ");
+    scanf("%d", &j_year);
+    if((c_year-j_year) >3){
+        printf("The employee has recieved a bonus of Rs. 2,500/-");
+    }
+}
